@@ -122,6 +122,8 @@ e|-----------------------------------------------------11~-----|
 
 Standard tuning in the same right-handed mirror view: low E at the top and high e at the bottom.
 
+![Mirror-view guitar fretboard showing every note from fret 0 to 24](mirror-view-fretboard-all-notes.png)
+
 | String / fret | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | Low E | E | F | Gb | G | Ab | A | Bb | B | C | Db | D | Eb | E | F | Gb | G | Ab | A | Bb | B | C | Db | D | Eb | E |
