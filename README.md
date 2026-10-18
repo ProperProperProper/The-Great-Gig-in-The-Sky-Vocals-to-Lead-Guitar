@@ -118,17 +118,8 @@ e|-----------------------------------------------------11~-----|
 
 `h` hammer-on · `p` pull-off · `b` bend · `r` release · `/` slide up · `\` slide down · `~` vibrato
 
-## Fretboard — every note from fret 0 to 24
+## Fretboard — tab notes only
 
-Standard tuning in the same right-handed mirror view: low E at the top and high e at the bottom.
+Standard tuning in the same right-handed mirror view: low E at the top and high e at the bottom. Only notes used in the tab are marked: `C D Eb E F G A Bb B`.
 
-![Mirror-view guitar fretboard showing every note from fret 0 to 24](mirror-view-fretboard-all-notes.png)
-
-| String / fret | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| Low E | E | F | Gb | G | Ab | A | Bb | B | C | Db | D | Eb | E | F | Gb | G | Ab | A | Bb | B | C | Db | D | Eb | E |
-| A | A | Bb | B | C | Db | D | Eb | E | F | Gb | G | Ab | A | Bb | B | C | Db | D | Eb | E | F | Gb | G | Ab | A |
-| D | D | Eb | E | F | Gb | G | Ab | A | Bb | B | C | Db | D | Eb | E | F | Gb | G | Ab | A | Bb | B | C | Db | D |
-| G | G | Ab | A | Bb | B | C | Db | D | Eb | E | F | Gb | G | Ab | A | Bb | B | C | Db | D | Eb | E | F | Gb | G |
-| B | B | C | Db | D | Eb | E | F | Gb | G | Ab | A | Bb | B | C | Db | D | Eb | E | F | Gb | G | Ab | A | Bb | B |
-| High e | E | F | Gb | G | Ab | A | Bb | B | C | Db | D | Eb | E | F | Gb | G | Ab | A | Bb | B | C | Db | D | Eb | E |
+![Mirror-view guitar fretboard showing only notes used in the tab](mirror-view-fretboard-all-notes.png)
