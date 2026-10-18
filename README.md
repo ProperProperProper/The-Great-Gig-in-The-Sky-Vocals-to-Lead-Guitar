@@ -118,8 +118,8 @@ e|-----------------------------------------------------11~-----|
 
 `h` hammer-on · `p` pull-off · `b` bend · `r` release · `/` slide up · `\` slide down · `~` vibrato
 
-## Fretboard — tab notes only
+## Fretboard — exact tab positions only
 
-Standard tuning in the same right-handed mirror view: low E at the top and high e at the bottom. Only notes used in the tab are marked: `C D Eb E F G A Bb B`.
+Standard tuning in the same right-handed mirror view: low E at the top and high e at the bottom. Only the exact string-and-fret positions played in the tab are marked; repeated pitch names elsewhere remain blank.
 
-![Mirror-view guitar fretboard showing only notes used in the tab](mirror-view-fretboard-all-notes.png)
+![Mirror-view guitar fretboard showing only exact positions played in the tab](mirror-view-fretboard-all-notes.png)
