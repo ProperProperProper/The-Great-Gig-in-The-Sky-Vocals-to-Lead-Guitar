@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert standard guitar tabs into right-handed mirror view.">
+    <title>The Great Gig in The Sky — Vocals to Lead Guitar</title>
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+  <body>
+    <main class="project-shell">
+      <header class="hero">
+        <p class="eyebrow">Electric vocal lead · Mirror-view tab</p>
+        <h1>The Great Gig in The Sky</h1>
+        <p class="subtitle">See the strings as a right-handed player sees them in a mirror: thick low E above thin high e.</p>
+      </header>
+
+      <section class="orientation" aria-label="Mirror-view string orientation">
+        <span><strong>Top</strong> Low E · A · D · G · B · High e <strong>Bottom</strong></span>
+      </section>
+
+      <section class="workspace" aria-labelledby="converter-heading">
+        <div class="section-heading">
+          <div>
+            <p class="phase-label">Tab workspace</p>
+            <h2 id="converter-heading">Standard tab → mirror view</h2>
+          </div>
+          <p id="parse-status" class="parse-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <form id="tab-form">
+          <label for="tab-input">Standard ASCII tab input</label>
+          <textarea id="tab-input" spellcheck="false" rows="8">e|--5h7--7p5--8b10r8--7/10--10\7--5~~~----|
+B|----------------------------------------|
+G|-----------7----------------------------|
+D|-----------7----------------------------|
+A|----------------------------------------|
+E|--3-------------------------------------|</textarea>
+          <div class="button-row">
+            <button type="submit">Convert pasted tab</button>
+            <button type="button" id="load-project-tab" class="secondary-button">Load complete project vocal tab</button>
+          </div>
+        </form>
+
+        <div class="output-panel">
+          <div>
+            <p class="phase-label">Right-handed mirror view</p>
+            <p class="output-note">Low E is intentionally the first row.</p>
+          </div>
+          <pre id="tab-output" tabindex="0" aria-label="Converted mirror-view guitar tab"></pre>
+        </div>
+      </section>
+
+      <section class="workspace fretboard-section" aria-labelledby="fretboard-heading">
+        <div class="section-heading">
+          <div>
+            <p class="phase-label">Improvisation map</p>
+            <h2 id="fretboard-heading">0–24 fretboard</h2>
+          </div>
+          <div class="fretboard-controls">
+            <label for="scale-mode">Highlight</label>
+            <select id="scale-mode">
+              <option value="dorian">G Dorian</option>
+              <option value="naturalMinor">G natural minor</option>
+              <option value="chromatic">Chromatic</option>
+            </select>
+            <label class="toggle"><input id="show-notes" type="checkbox" checked> Show note names</label>
+          </div>
+        </div>
+
+        <div class="legend" aria-label="Fretboard legend">
+          <span><i class="legend-dot root"></i> G root</span>
+          <span><i class="legend-dot scale"></i> Selected-scale note</span>
+          <span><i class="legend-dot outside"></i> Outside selected scale</span>
+        </div>
+        <p id="scale-description" class="output-note"></p>
+        <div class="fretboard-scroll" tabindex="0" aria-label="Horizontally scrollable 24-fret guitar map">
+          <div id="fretboard" class="fretboard" role="grid" aria-label="Mirror-view guitar fretboard"></div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>

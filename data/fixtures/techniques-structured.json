@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "techniques-synthetic-fixture",
+  "title": "Synthetic technique coverage fixture",
+  "arranger": null,
+  "source": {
+    "kind": "original-fixture",
+    "reference": "Project-authored test material",
+    "permissionBasis": "Original synthetic fixture",
+    "license": null
+  },
+  "tuning": [
+    { "string": 6, "label": "E", "pitch": "E2" },
+    { "string": 5, "label": "A", "pitch": "A2" },
+    { "string": 4, "label": "D", "pitch": "D3" },
+    { "string": 3, "label": "G", "pitch": "G3" },
+    { "string": 2, "label": "B", "pitch": "B3" },
+    { "string": 1, "label": "e", "pitch": "E4" }
+  ],
+  "displayOrder": [6, 5, 4, 3, 2, 1],
+  "measures": [
+    {
+      "number": 1,
+      "width": 40,
+      "sourceLines": [
+        { "string": 1, "label": "e", "content": "--5h7--7p5--8b10r8--7/10--10\\7--5~~~----" },
+        { "string": 2, "label": "B", "content": "----------------------------------------" },
+        { "string": 3, "label": "G", "content": "-----------7----------------------------" },
+        { "string": 4, "label": "D", "content": "-----------7----------------------------" },
+        { "string": 5, "label": "A", "content": "----------------------------------------" },
+        { "string": 6, "label": "E", "content": "--3-------------------------------------" }
+      ],
+      "events": [
+        { "id": "n1", "kind": "note", "string": 1, "column": 2, "length": 1, "fret": 5, "simultaneousGroup": null, "techniques": [{ "type": "hammer-on", "symbol": "h", "startColumn": 3, "endColumn": 3, "targetFret": 7 }] },
+        { "id": "n2", "kind": "note", "string": 1, "column": 7, "length": 1, "fret": 7, "simultaneousGroup": null, "techniques": [{ "type": "pull-off", "symbol": "p", "startColumn": 8, "endColumn": 8, "targetFret": 5 }] },
+        { "id": "n3", "kind": "note", "string": 1, "column": 12, "length": 1, "fret": 8, "simultaneousGroup": null, "techniques": [{ "type": "bend", "symbol": "b", "startColumn": 13, "endColumn": 15, "targetFret": 10 }, { "type": "release", "symbol": "r", "startColumn": 16, "endColumn": 17, "targetFret": 8 }] },
+        { "id": "n4", "kind": "note", "string": 1, "column": 20, "length": 1, "fret": 7, "simultaneousGroup": null, "techniques": [{ "type": "slide-up", "symbol": "/", "startColumn": 21, "endColumn": 23, "targetFret": 10 }] },
+        { "id": "n5", "kind": "note", "string": 1, "column": 26, "length": 2, "fret": 10, "simultaneousGroup": null, "techniques": [{ "type": "slide-down", "symbol": "\\", "startColumn": 28, "endColumn": 29, "targetFret": 7 }] },
+        { "id": "n6", "kind": "note", "string": 1, "column": 32, "length": 1, "fret": 5, "simultaneousGroup": null, "techniques": [{ "type": "vibrato", "symbol": "~~~", "startColumn": 33, "endColumn": 35, "targetFret": null }] },
+        { "id": "n7", "kind": "note", "string": 3, "column": 11, "length": 1, "fret": 7, "simultaneousGroup": "chord-1", "techniques": [] },
+        { "id": "n8", "kind": "note", "string": 4, "column": 11, "length": 1, "fret": 7, "simultaneousGroup": "chord-1", "techniques": [] },
+        { "id": "n9", "kind": "note", "string": 6, "column": 2, "length": 1, "fret": 3, "simultaneousGroup": "chord-0", "techniques": [] },
+        { "id": "r1", "kind": "rest", "string": 2, "column": 0, "length": 40, "simultaneousGroup": null }
+      ]
+    }
+  ]
+}

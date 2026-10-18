@@ -1,0 +1,10 @@
+{
+  "id": "replace-with-stable-id",
+  "title": "Source or arrangement title",
+  "arranger": "Unknown",
+  "source": "URL, publication, or supplied-by description",
+  "accessed": "YYYY-MM-DD",
+  "permissionBasis": "owner-supplied | licensed | public-domain | explicit-permission",
+  "license": null,
+  "notes": "Document any attribution or usage restrictions."
+}
