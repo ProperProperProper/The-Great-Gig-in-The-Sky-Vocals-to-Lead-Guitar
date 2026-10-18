@@ -9,12 +9,6 @@ export const TUNING = [
   { string: 1, label: "e", openMidi: 64, openPitch: "E4" }
 ];
 
-export const SCALES = {
-  chromatic: new Set(PITCH_CLASSES),
-  naturalMinor: new Set(["G", "A", "Bb", "C", "D", "Eb", "F"]),
-  dorian: new Set(["G", "A", "Bb", "C", "D", "E", "F"])
-};
-
 export function pitchFromMidi(midi) {
   if (!Number.isInteger(midi) || midi < 0 || midi > 127) throw new Error("MIDI pitch must be an integer from 0 to 127.");
   return { name: PITCH_CLASSES[midi % 12], octave: Math.floor(midi / 12) - 1, midi };
@@ -26,9 +20,4 @@ export function createFretboard(maxFret = 24) {
     ...openString,
     frets: Array.from({ length: maxFret + 1 }, (_, fret) => ({ fret, ...pitchFromMidi(openString.openMidi + fret) }))
   }));
-}
-
-export function scaleMembership(noteName, mode) {
-  if (!(mode in SCALES)) throw new Error(`Unknown scale mode: ${mode}`);
-  return SCALES[mode].has(noteName);
 }

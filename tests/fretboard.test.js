@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { createFretboard, scaleMembership, TUNING } from "../src/fretboard.js";
+import { createFretboard } from "../src/fretboard.js";
 
 test("builds mirror-order standard tuning through fret 24", () => {
   const board = createFretboard();
@@ -19,10 +19,3 @@ test("frets 12 and 24 are exactly one and two octaves above open", () => {
   }
 });
 
-test("natural minor highlights Eb while Dorian highlights E", () => {
-  assert.equal(scaleMembership("Eb", "naturalMinor"), true);
-  assert.equal(scaleMembership("E", "naturalMinor"), false);
-  assert.equal(scaleMembership("E", "dorian"), true);
-  assert.equal(scaleMembership("Eb", "dorian"), false);
-  assert.ok(TUNING.every((string) => Number.isInteger(string.openMidi)));
-});

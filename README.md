@@ -1,71 +1,119 @@
-# The Great Gig in The Sky — Vocals to Lead Guitar
+# The Great Gig in The Sky — Vocal Guitar Tab
 
-An interactive, mirror-view guitar tab and fretboard application for playing Clare Torry's studio vocal performance from "The Great Gig in the Sky" as an expressive electric lead-guitar solo.
+Electric-guitar arrangement in right-handed mirror view. The thick low E string is the top row; the thin high e string is the bottom row.
 
-## Status
-
-The project is complete through Phase 9 and published on GitHub. It includes the supplied vocal-tab draft, right-handed mirror conversion, a tested 0–24 fretboard, G Dorian and G natural minor highlighting, responsive controls, and documentation.
-
-Repository: <https://github.com/ProperProperProper/The-Great-Gig-in-The-Sky-Vocals-to-Lead-Guitar>
-
-## Stack
-
-The project uses dependency-free HTML, CSS, and JavaScript. This keeps the application portable and allows it to run from any basic static web server.
-
-## Run locally
-
-From this project directory, run:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open <http://localhost:8000> in a browser.
-
-Stop the server with `Ctrl+C`.
-
-Paste a conventional six-row ASCII tab (`e B G D A E`) into the workspace. The output reverses only the row order to `E A D G B e`, matching the string orientation a right-handed guitarist sees in a mirror while preserving every horizontal character position.
-
-The supplied project arrangement loads automatically. Use the scale selector below it to switch among G Dorian, G natural minor, and all chromatic notes. The note-name checkbox hides visual labels while retaining accessible descriptions.
-
-## Run tests
-
-```bash
-npm test
-```
-
-## Project structure
+## Section 1 — Initial entry and peak (1:07–1:45)
 
 ```text
-.
-├── assets/                 Static media and visual assets
-├── data/                   Approved source tabs and structured data
-├── src/
-│   ├── app.js              Application behavior
-│   ├── fretboard.js        Pitch and scale engine
-│   ├── tab-parser.js       ASCII parser and mirror renderer
-│   └── styles.css          Application styling
-├── tests/                  Automated test files
-├── codex_instructions.md   Phased project specification
-├── index.html              Single-page application entry point
-└── README.md               Project and launch documentation
+  (1:07 — Vocal entry)
+  Gm7                               C9
+E|-------------------------------------------------------------|
+A|-------------------------------------------------------------|
+D|-------------------------------------------------------------|
+G|--7/12----12--------------------12-------------------12~-----|
+B|-------11------13b15r13--11---------15--13---11--13----------|
+e|-----------------------------/15-----------------------------|
+
+  Gm7                                   C9
+E|-------------------------------------------------------------|
+A|-------------------------------------------------------------|
+D|-------------------------------------------------------------|
+G|----------------12~----12p10-12p10---------------------------|
+B|--13b15r13--11------------------------13b15r13--11--13-------|
+e|-------------------------------------------------------15~---|
+
+  (1:22 — Build-up)
+  Gm7                                    C9
+E|-------------------------------------------------------------|
+A|-------------------------------------------------------------|
+D|-------------------------------------------------------------|
+G|-----------------12-14-14b15r14-12-------------------12------|
+B|--13b15~---11-13--------------------13-15~-----13-15----15~--|
+e|-------------------------------------------------------------|
+
+  Gm7                                    C9
+E|-------------------------------------------------------------|
+A|-------------------------------------------------------------|
+D|-------------------------------------------------------------|
+G|--------12-14-14b15r14--12-----------------------------------|
+B|--13-15---------------------15p13\11---13b15r13-11-13~-------|
+e|-------------------------------------------------------------|
+
+  (1:36 — High peak)
+  Gm7                                    C9
+E|-------------------------------------------------------------|
+A|-------------------------------------------------------------|
+D|-------------------------------------------------------------|
+G|--------------------15p14--------------15b17~---15-14-12-----|
+B|--13b15r13-11-13/15-------15~----13-15-------------------15--|
+e|-------------------------------------------------------------|
+
+  Gm7                                    C9
+E|-------------------------------------------------------------|
+A|-------------------------------------------------------------|
+D|-------------------------------------------------------------|
+G|--14b15r14p12-----12~----------------------------------------|
+B|---------------15-------13b15r13p11----11~-------------------|
+e|------------------------------------13-----------------------|
 ```
 
-## Source-material policy
+## Section 2 — Soulful response (1:45–2:25)
 
-Only tab material supplied by the project owner or otherwise authorized for inclusion should be stored or published in this repository.
+```text
+  (1:45 — Mellow response)
+  Gm7                                   C9
+E|-------------------------------------------------------------|
+A|-------------------------------------------------------------|
+D|-------------------------------------------------------------|
+G|--10/12\10~----10b12r10--8-7----------7h8p7------------------|
+B|------------------------------10p8~----------10-8-10~--------|
+e|-------------------------------------------------------------|
 
-## Supported tab syntax
+  Gm7                                   C9
+E|-------------------------------------------------------------|
+A|-------------------------------------------------------------|
+D|-------------------------------------------------------------|
+G|---------9-12-12b14r12-9~-------------12/14\12~----12b14r12--|
+B|--8h10~------------------------------------------------------|
+e|-------------------------------------------------------------|
 
-- Six-string standard input order: `e B G D A E`
-- Right-handed mirror output order: `E A D G B e`
-- Frets 0–24
-- Hammer-ons (`h`), pull-offs (`p`), bends (`b`), releases (`r`), slides (`/` and `\`), and vibrato (`~`)
-- Multiple consecutive six-row blocks
+  (2:00 — Emotional vibrato build)
+  Gm7                                   C9
+E|-------------------------------------------------------------|
+A|-------------------------------------------------------------|
+D|-------------------------------------------------------------|
+G|--10--12b14r12p10----10~-------------------------------------|
+B|------------------13--------13b15r13p11-13-11~-----11h13p11--|
+e|-------------------------------------------------------------|
 
-## Known limitations
+  Bridge begins near 2:16
+E|-------------------------------------------------------------|
+A|-------------------------------------------------------------|
+D|-------------------------------------------------------------|
+G|-------12-14b16-14b16~----14b16r14-12--14b16~----14b16r14-12-|
+B|--13-15------------------------------------------------------|
+e|-------------------------------------------------------------|
+```
 
-- Character columns preserve relative ASCII alignment but do not encode formal rhythmic values.
-- The user-supplied vocal tab is a structurally valid draft, not a note-for-note certified transcription; see `data/tab-audit.md`.
-- Imported blocks must contain exactly six labeled rows in standard input order.
-- Alternate tunings are not supported.
+## Section 3 — Later vocal passage (from 3:01)
+
+```text
+  (3:01 — Soft wailing / slow decay)
+E|-------------------------------------------------------------|
+A|-------------------------------------------------------------|
+D|-------------------------------------------------------------|
+G|--12\10/12~----------------------------12\10-----------------|
+B|-------------11p10-11~----------------------11p10h11---------|
+e|-----------------------------------------------------13b15~--|
+
+E|-------------------------------------------------------------|
+A|-------------------------------------------------------------|
+D|-------------------------------------------------------------|
+G|--------------------12~--------------------------------------|
+B|--13b15r13-11-13p11----------13b15r13-11-13~----11\10---------|
+e|-----------------------------------------------------11~-----|
+```
+
+## Symbols
+
+`h` hammer-on · `p` pull-off · `b` bend · `r` release · `/` slide up · `\` slide down · `~` vibrato
