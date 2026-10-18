@@ -4,7 +4,9 @@ An interactive, mirror-view guitar tab and fretboard application for playing Cla
 
 ## Status
 
-The local application is complete through Phase 8. It includes the supplied vocal-tab draft, right-handed mirror conversion, a tested 0–24 fretboard, G Dorian and G natural minor highlighting, responsive controls, and documentation.
+The project is complete through Phase 9 and published on GitHub. It includes the supplied vocal-tab draft, right-handed mirror conversion, a tested 0–24 fretboard, G Dorian and G natural minor highlighting, responsive controls, and documentation.
+
+Repository: <https://github.com/ProperProperProper/The-Great-Gig-in-The-Sky-Vocals-to-Lead-Guitar>
 
 ## Stack
 
